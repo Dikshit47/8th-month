@@ -1,1 +1,218 @@
-body{margin:0;font-family:system-ui;background:#111;color:#fff;display:grid;place-items:center;height:100vh}button{padding:14px 24px;border-radius:999px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9ecf,#ffc6df,#ffe4ef);
+overflow-x:hidden;
+color:#fff;
+}
+
+.page{
+display:none;
+min-height:100vh;
+padding:40px 20px;
+text-align:center;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.page.active{
+display:flex;
+animation:fade .8s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+h2{
+font-size:28px;
+margin-bottom:20px;
+}
+
+h3{
+margin-top:10px;
+}
+
+.combine{
+font-size:30px;
+font-weight:bold;
+margin:20px 0;
+}
+
+.intro,.end-text{
+max-width:700px;
+font-size:18px;
+line-height:1.8;
+margin:20px auto;
+}
+
+button{
+background:#ff2e7e;
+color:#fff;
+border:none;
+padding:14px 28px;
+border-radius:30px;
+font-size:17px;
+cursor:pointer;
+margin:12px;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+background:#ff0f6d;
+}
+
+.slider{
+width:300px;
+height:380px;
+margin:25px auto;
+position:relative;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+display:none;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.slide.active{
+display:block;
+}
+
+.slider-btns{
+margin-top:20px;
+}
+/* ========= LETTER ========= */
+
+.letter{
+max-width:700px;
+background:rgba(255,255,255,.18);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+line-height:1.9;
+font-size:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.letter p{
+margin:15px 0;
+}
+
+.sign{
+font-size:22px;
+font-weight:bold;
+margin-top:25px;
+}
+
+/* ========= KISS ========= */
+
+.kiss{
+font-size:90px;
+animation:kiss 1.5s infinite;
+margin:25px 0;
+}
+
+@keyframes kiss{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.2);
+}
+100%{
+transform:scale(1);
+}
+}
+
+/* ========= HEART RAIN ========= */
+
+.heart-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+}
+
+.heart{
+position:absolute;
+top:-20px;
+font-size:22px;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-20px);
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+/* ========= MOBILE ========= */
+
+@media(max-width:768px){
+
+h1{
+font-size:30px;
+}
+
+h2{
+font-size:23px;
+}
+
+.combine{
+font-size:24px;
+}
+
+.intro,
+.end-text,
+.letter{
+font-size:16px;
+}
+
+.slider{
+width:260px;
+height:330px;
+}
+
+button{
+width:90%;
+font-size:16px;
+}
+
+.kiss{
+font-size:70px;
+}
+
+}
