@@ -1,3 +1,6 @@
+<!-- =========================
+index.html (PART 1)
+========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,654 +10,159 @@
 <title>Happy 8th Month Anniversary ❤️</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 </head>
 
 <body>
 
-<!-- ========================= -->
-<!-- LOADER -->
-<!-- ========================= -->
-
-<div id="loader">
-
-<div class="loader-heart">
-❤️
-</div>
-
-<h2>Bhoomikshit</h2>
-
-<p>Loading our love story...</p>
-
-</div>
-
-<!-- ========================= -->
-<!-- BACKGROUND EFFECTS -->
-<!-- ========================= -->
-
-<div id="stars"></div>
-
-<div id="hearts"></div>
-
-<div id="petals"></div>
-
-<div id="confetti"></div>
-
-<audio id="bgMusic" loop>
-
-<source src="assets/music.mp3" type="audio/mpeg">
-
+<!-- Music -->
+<audio id="song" loop>
+    <source src="music.mp3" type="audio/mpeg">
 </audio>
 
-<!-- ========================= -->
-<!-- HERO SECTION -->
-<!-- ========================= -->
+<!-- Heart Rain -->
+<div class="heart-container"></div>
 
-<section class="hero" id="home">
+<!-- ========= PAGE 1 ========= -->
 
-<div class="glass">
+<section class="page active" id="page1">
 
-<h3 class="month">
-Happy 8th Month Anniversary
-</h3>
+<h1>Dikshit ❤️ Bhoomi</h1>
 
-<h1>
+<h2>Happy 8th Month Anniversary</h2>
 
-<span>Dikshit</span>
+<h3>Our Beautiful Name</h3>
 
-<span class="heart">
-❤️
-</span>
-
-<span>Bhoomi</span>
-
-</h1>
-
-<h2>
-
-Forever
-
-<span>
-
-Bhoomikshit
-
-</span>
-
-</h2>
-
-<p id="typing"></p>
-
-<button id="musicBtn">
-
-<i class="fa-solid fa-heart"></i>
-
-Touch My Heart
-
-</button>
-
-<div class="scroll">
-
-<i class="fa-solid fa-angle-down"></i>
-
+<div class="combine">
+❤️ Bhoomikshit ❤️
 </div>
 
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- GALAXY SECTION -->
-<!-- ========================= -->
-
-<section class="galaxy" id="journey">
-
-<div class="content">
-
-<h2>
-
-Our Beautiful Journey
-
-</h2>
-
-<div class="counter">
-
-<div class="box">
-
-<h3 id="months">
-
-8
-
-</h3>
-
-<p>Months</p>
-
-</div>
-
-<div class="box">
-
-<h3 id="days">
-
-0
-
-</h3>
-
-<p>Days</p>
-
-</div>
-
-<div class="box">
-
-<h3 id="hours">
-
-0
-
-</h3>
-
-<p>Hours</p>
-
-</div>
-
-</div>
-
-<p>
-
-Every second with you is the most beautiful memory of my life.
-
+<p class="intro">
+21 November 2025 se shuru hua hamara safar...
+Aur aaj hamare pyaar ke 8 khoobsurat mahine complete ho gaye. ❤️
 </p>
 
-</div>
+<button onclick="playMusic()">
+🎵 Play Music
+</button>
+
+<button onclick="nextPage(2)">
+Start Our Journey ❤️
+</button>
 
 </section>
-<!-- ========================= -->
-<!-- MEMORIES SECTION -->
-<!-- ========================= -->
 
-<section class="gallery" id="memories">
+<!-- ========= PAGE 2 ========= -->
 
-<div class="section-title">
+<section class="page" id="page2">
 
 <h2>Our Beautiful Memories 📸</h2>
 
-<p>
-Every picture tells a story...
-Every smile reminds me of you ❤️
-</p>
+<div class="slider">
+
+<img src="1.jpg" class="slide active">
+
+<img src="2.jpg" class="slide">
+
+<img src="3.jpg" class="slide">
 
 </div>
 
-<div class="photo-grid">
+<div class="slider-btns">
 
-<div class="photo-card">
+<button onclick="prevSlide()">⬅</button>
 
-<img src="assets/photo1.jpg" alt="photo1">
-
-<h3>Our Smile ❤️</h3>
+<button onclick="nextSlide()">➡</button>
 
 </div>
 
-<div class="photo-card">
-
-<img src="assets/photo2.jpg" alt="photo2">
-
-<h3>Forever Together 🌸</h3>
-
-</div>
-
-<div class="photo-card">
-
-<img src="assets/photo3.jpg" alt="photo3">
-
-<h3>My Favourite Person 🥺</h3>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- LOVE LETTER -->
-<!-- ========================= -->
-
-<section class="letter">
-
-<div class="letter-box">
-
-<h2>
-
-💌 A Letter For My Laddu
-
-</h2>
-
-<p>
-
-Dear Bhoomi,
-
-</p>
-
-<p>
-
-21 November 2025...
-
-Us din shayad mujhe bhi nahi pata tha ki meri life itni beautiful hone wali hai.
-
-</p>
-
-<p>
-
-Ye 8 months sirf time nahi the...
-
-Ye meri life ke best moments the.
-
-</p>
-
-<p>
-
-Tumhari smile...
-
-Tumhari care...
-
-Tumhara cute gussa...
-
-Sab kuch meri life ka favourite part ban chuka hai.
-
-</p>
-
-<p>
-
-Thank You Laddu...
-
-Har smile ke liye...
-
-Har support ke liye...
-
-Aur meri life me aane ke liye.
-
-</p>
-
-<p>
-
-Happy 8th Month Anniversary ❤️
-
-</p>
-
-<h3>
-
-Forever Yours,
-
-<br>
-
-Dikshit ❤️
-
-</h3>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- TIMELINE -->
-<!-- ========================= -->
-
-<section class="timeline">
-
-<h2>
-
-Our Journey ❤️
-
-</h2>
-
-<div class="timeline-box">
-
-<div class="event">
-
-<h3>
-
-21 November 2025
-
-</h3>
-
-<p>
-
-The day our beautiful story started ❤️
-
-</p>
-
-</div>
-
-<div class="event">
-
-<h3>
-
-First Laugh 😊
-
-</h3>
-
-<p>
-
-A smile that became my happiness.
-
-</p>
-
-</div>
-
-<div class="event">
-
-<h3>
-
-8 Beautiful Months
-
-</h3>
-
-<p>
-
-Still counting forever...
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<!-- ========================= -->
-<!-- REASONS I LOVE YOU -->
-<!-- ========================= -->
-
-<section class="reasons" id="reasons">
-
-    <div class="section-title">
-        <h2>❤️ Reasons Why I Love You ❤️</h2>
-        <p>There are thousands of reasons... but these are my favourites.</p>
-    </div>
-
-    <div class="reason-grid">
-
-        <div class="reason-card">
-            <span>😊</span>
-            <h3>Your Smile</h3>
-            <p>Your smile can instantly make my worst day beautiful.</p>
-        </div>
-
-        <div class="reason-card">
-            <span>🤗</span>
-            <h3>Your Care</h3>
-            <p>You always make me feel loved and important.</p>
-        </div>
-
-        <div class="reason-card">
-            <span>🥺</span>
-            <h3>Your Cute Anger</h3>
-            <p>Even when you're angry, you're still the cutest person.</p>
-        </div>
-
-        <div class="reason-card">
-            <span>❤️</span>
-            <h3>Your Love</h3>
-            <p>You complete my life in every possible way.</p>
-        </div>
-
-        <div class="reason-card">
-            <span>🌎</span>
-            <h3>My World</h3>
-            <p>Home isn't a place anymore... it's wherever you are.</p>
-        </div>
-
-        <div class="reason-card">
-            <span>♾️</span>
-            <h3>Everything</h3>
-            <p>I don't need a reason anymore... I simply love YOU.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- PROMISE SECTION -->
-<!-- ========================= -->
-
-<section class="promise">
-
-    <div class="promise-box">
-
-        <h2>🌹 My Promises 🌹</h2>
-
-        <ul>
-
-            <li>❤️ I'll always choose you.</li>
-
-            <li>🤝 I'll always respect you.</li>
-
-            <li>😊 I'll always make you smile.</li>
-
-            <li>🌎 I'll always support your dreams.</li>
-
-            <li>💍 I'll stay beside you forever.</li>
-
-            <li>♾️ I'll love you till my last breath.</li>
-
-        </ul>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- SECRET MESSAGE -->
-<!-- ========================= -->
-
-<section class="secret">
-
-    <div class="secret-box">
-
-        <h2>🎁 Secret Message</h2>
-
-        <p>
-
-            If you're reading this...
-
-            Just remember...
-
-            You are the best thing that has ever happened to me.
-
-        </p>
-
-        <button id="secretBtn">
-
-            Tap Here ❤️
-
-        </button>
-
-    </div>
-
-</section>
-<!-- ========================= -->
-<!-- FINAL SURPRISE -->
-<!-- ========================= -->
-
-<section class="final" id="final">
-
-    <div class="final-content">
-
-        <h2>✨ Final Surprise ✨</h2>
-
-        <h1>Dikshit ❤️ Bhoomi</h1>
-
-        <h3>Forever Bhoomikshit ♾️</h3>
-
-        <p>
-            8 Months...
-            Countless Memories...
-            Infinite Love...
-        </p>
-
-        <div class="love-quote">
-
-            "You are not my everything...
-
-            because without you,
-
-            everything becomes nothing."
-
-        </div>
-
-        <button id="loveBtn">
-
-            ❤️ I Love You Infinity ❤️
-
-        </button>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- FIREWORK CONTAINER -->
-<!-- ========================= -->
-
-<div id="fireworks"></div>
-
-<!-- ========================= -->
-<!-- FLOATING HEARTS -->
-<!-- ========================= -->
-
-<div id="heartContainer"></div>
-
-<!-- ========================= -->
-<!-- END MESSAGE -->
-<!-- ========================= -->
-
-<section class="ending">
-
-    <div class="ending-box">
-
-        <h2>
-
-            Thank You My Laddu ❤️
-
-        </h2>
-
-        <p>
-
-            Thank you for every smile,
-
-            every laugh,
-
-            every memory,
-
-            every hug,
-
-            every moment.
-
-        </p>
-
-        <h3>
-
-            Happy 8th Month Anniversary ❤️
-
-        </h3>
-
-        <h1>
-
-            Dikshit ❤️ Bhoomi
-
-        </h1>
-
-        <h2>
-
-            Forever Bhoomikshit
-
-        </h2>
-
-    </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- BACK TO TOP BUTTON -->
-<!-- ========================= -->
-
-<button id="topBtn">
-
-<i class="fa-solid fa-arrow-up"></i>
-
+<button onclick="nextPage(3)">
+Next ❤️
 </button>
 
-<!-- ========================= -->
-<!-- EXTRA EFFECT LAYERS -->
-<!-- ========================= -->
+</section>
 
-<div id="magicGlow"></div>
-
-<div id="particles"></div>
-
-<div id="floatingText"></div>
-
-<!-- JavaScript -->
+<!-- ===== PART 2 se Page 3 & 4 continue hogi ===== -->
 
 <script src="script.js"></script>
-<!-- ========================= -->
-<!-- FOOTER -->
-<!-- ========================= -->
-
-<footer class="footer">
-
-    <p>
-        Made with ❤️ by Dikshit
-        <br>
-        For My Laddu Bhoomi
-    </p>
-
-    <small>
-        Since 21 November 2025 • Happy 8th Month Anniversary ♾️
-    </small>
-
-</footer>
-
-<!-- ========================= -->
-<!-- HIDDEN EASTER EGG -->
-<!-- ========================= -->
-
-<div id="easterEgg" class="hidden">
-
-    <div class="egg-box">
-
-        <h2>🎉 Secret Unlocked 🎉</h2>
-
-        <p>
-
-            Congratulations Laddu ❤️
-
-            You found my hidden message.
-
-        </p>
-
-        <h3>
-
-            I Promise...
-
-            I'll Love You Forever.
-
-        </h3>
-
-        <button id="closeEgg">
-
-            Close ❤️
-
-        </button>
-
-    </div>
-
-</div>
 
 </body>
 </html>
+<!-- ========= PAGE 3 ========= -->
+
+<section class="page" id="page3">
+
+<h2>💌 A Letter For My Laddu 💌</h2>
+
+<div class="letter">
+
+<p>
+Dear <b>Laddu ❤️</b>,
+</p>
+
+<p>
+Pata hi nahi chala kab tum meri life ka sabse beautiful part ban gayi.
+Ye 8 months sirf time nahi the, ye meri life ke sabse precious moments the.
+</p>
+
+<p>
+Tumhari smile, tumhari care aur tumhara saath meri duniya ko complete banata hai.
+Har din bas itni hi wish rehti hai ki hum dono hamesha isi tarah saath rahein.
+</p>
+
+<p>
+Thank you meri life me aane ke liye,
+Thank you mujhe itna special feel karane ke liye.
+</p>
+
+<p>
+I Love You So Much Laddu ❤️
+Forever & Always...
+</p>
+
+<p class="sign">
+Your's Forever,<br>
+<b>Dikshit ❤️</b>
+</p>
+
+</div>
+
+<button onclick="nextPage(4)">
+Last Surprise 🎁
+</button>
+
+</section>
+
+<!-- ========= PAGE 4 ========= -->
+
+<section class="page" id="page4">
+
+<h1>❤️ Bhoomikshit ❤️</h1>
+
+<h2>Happy 8th Month Anniversary</h2>
+
+<div class="kiss">
+💏
+</div>
+
+<p class="end-text">
+No matter kitna bhi time nikal jaye,
+meri favourite person hamesha tum hi rahogi. ❤️
+</p>
+
+<p class="end-text">
+Bas ek hi promise...
+Kabhi mera haath mat chhodna.
+</p>
+
+<h2>
+I Love You So Much
+Laddu ❤️
+</h2>
+
+<button onclick="nextPage(1)">
+🔁 Watch Again
+</button>
+
+</section>
+
+<!-- ===== index.html Complete ===== -->
