@@ -1,0 +1,1 @@
+document.getElementById('musicBtn').onclick=()=>alert('Music will play after you add assets/music.mp3 in the full version.');
